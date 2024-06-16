@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Getting ready</h1>
+            <p>Please ensure that your device is <br> properly plugged in and not muted.</p>
+            <p>You should now hear music playing <br>from your audio device.</p>
+
+            <button id="proceedButton" onclick="location.href='page2.html'">Proceed</button>
+        </div>
+    </div>
+    <script>
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            proceedButton.click();
+        }
+    });
+    </script>
+    <script src="page1.js"></script>
+</body>
+</html>
